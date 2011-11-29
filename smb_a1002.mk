@@ -11,8 +11,9 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-    $(LOCAL_PATH)/wifi/bcm4329.36.ko:system/lib/hw/wlan/bcm4329.ko \
-    $(LOCAL_PATH)/init.harmony.rc:root/init.harmony.rc
+    $(LOCAL_PATH)/wifi/bcm4329.36.ko:system/lib/hw/wlan/bcm4329.ko
+
+#    $(LOCAL_PATH)/init.harmony.rc:root/init.rc
 
 PRODUCT_PACKAGES += \
     libreference-ril
