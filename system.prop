@@ -6,7 +6,7 @@
 # Density set to 161 to allow market to function properly
 ro.sf.lcd_density=160
 
-wifi.interface = wlan0
+wifi.interface = eth0
 # Time between scans in seconds. Keep it high to minimize battery drain.
 # This only affects the case in which there are remembered access points,
 # but none are in range.

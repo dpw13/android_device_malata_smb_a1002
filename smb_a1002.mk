@@ -11,9 +11,14 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-    $(LOCAL_PATH)/wifi/bcm4329.36.ko:system/lib/hw/wlan/bcm4329.ko
+    $(LOCAL_PATH)/wifi/bcm4329.36.ko:system/lib/hw/wlan/bcm4329.ko \
+    $(LOCAL_PATH)/wifi/fw_bcm4329.bin:system/lib/hw/wlan/fw_bcm4329.bin \
+    $(LOCAL_PATH)/wifi/nvram.txt:system/lib/hw/wlan/nvram.txt
 
 #    $(LOCAL_PATH)/init.harmony.rc:root/init.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/at168_touch.idc:system/usr/idc/at168_touch.idc
 
 PRODUCT_PACKAGES += \
     libreference-ril
