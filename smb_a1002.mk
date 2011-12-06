@@ -15,13 +15,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/fw_bcm4329.bin:system/lib/hw/wlan/fw_bcm4329.bin \
     $(LOCAL_PATH)/wifi/nvram.txt:system/lib/hw/wlan/nvram.txt
 
-#    $(LOCAL_PATH)/init.harmony.rc:root/init.rc
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/at168_touch.idc:system/usr/idc/at168_touch.idc
 
 PRODUCT_PACKAGES += \
-    libreference-ril
-
-PRODUCT_NAME := full_smb_a1002
-PRODUCT_DEVICE := smb_a1002
+    libreference-ril \
+    libaudio.primary.$(TARGET_BOOTLOADER_BOARD_NAME) \
+    audio_policy.$(TARGET_BOOTLOADER_BOARD_NAME)
