@@ -22,6 +22,8 @@ mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull needed standard libs
 adb pull /system/lib/libaudio.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/liba2dp.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libasound.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libaudiopolicy.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcgdrv.so ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -105,6 +107,7 @@ adb pull /system/lib/hw/gralloc.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprie
 adb pull /system/lib/hw/overlay.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/lights.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/sensors.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/hw/hwcomposer.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull keychar files
 #adb pull /system/usr/keychars/nvec_keyboard.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
